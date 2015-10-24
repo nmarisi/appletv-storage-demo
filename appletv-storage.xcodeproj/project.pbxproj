@@ -20,6 +20,7 @@
 		4D525EA61BDB7D950074650E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D525EA81BDB7D950074650E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D525EAA1BDB7D950074650E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D525EB01BDBDB1B0074650E /* appletv-storage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "appletv-storage.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		4D525EA01BDB7D950074650E /* appletv-storage */ = {
 			isa = PBXGroup;
 			children = (
+				4D525EB01BDBDB1B0074650E /* appletv-storage.entitlements */,
 				4D525EA11BDB7D950074650E /* AppDelegate.swift */,
 				4D525EA31BDB7D950074650E /* ViewController.swift */,
 				4D525EA51BDB7D950074650E /* Main.storyboard */,
@@ -92,6 +94,12 @@
 				TargetAttributes = {
 					4D525E9D1BDB7D950074650E = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 79X6ADKY9P;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -235,6 +243,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "appletv-storage/appletv-storage.entitlements";
 				INFOPLIST_FILE = "appletv-storage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.techbrewers.appletv-storage";
@@ -247,6 +256,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "appletv-storage/appletv-storage.entitlements";
 				INFOPLIST_FILE = "appletv-storage/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.techbrewers.appletv-storage";

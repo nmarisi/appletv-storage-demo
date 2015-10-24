@@ -45,7 +45,6 @@ class ViewController: UIViewController {
         messageLabel.text = "Saved"
     }
     
-    
     @IBAction func loadPressed(sender: UIButton) {
         switch sender.tag {
         case buttomTypes.defaults.rawValue:
